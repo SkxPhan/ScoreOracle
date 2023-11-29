@@ -1,2 +1,2 @@
-# FTBP
-Football Tournament Prediction Platform
+# Football Tournament Prediction Platform
+Betting website
