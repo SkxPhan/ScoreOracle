@@ -5,7 +5,6 @@ Welcome to ScoreOracle, a web platform that allows users to make predictions on 
 ## Table of Contents
 
 - [Features](#features)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Features
