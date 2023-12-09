@@ -1,6 +1,7 @@
 # ScoreOracle - Football Tournament Prediction Platform
 
 ![Continuous Integration](https://github.com/SkxPhan/ScoreOracle/actions/workflows/ci.yml/badge.svg)
+![Code Quality](https://github.com/SkxPhan/ScoreOracle/actions/workflows/code_quality.yml/badge.svg)
 
 Welcome to ScoreOracle, a web platform that allows users to make predictions on football tournaments and engage in friendly betting with friends. This project is designed to provide an interactive and fun way for users to share their predictions and compete against each other in tournaments like the Champions League or the World Cup.
 
