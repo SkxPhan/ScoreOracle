@@ -33,3 +33,23 @@ jobs:
     - name: Run linter
       run: |
         pipenv run flake8
+
+    - name: Run type checker (mypy)
+      run: |
+        pipenv run mypy .
+  
+    - name: Run code formatter (black)
+      run: |
+        pipenv run black .
+  
+    - name: Run security linter (bandit)
+      run: |
+        pipenv run bandit -r . --exclude tests
+  
+    - name: Run import sorter (isort)
+      run: |
+        pipenv run isort .
+  
+    - name: Run tests with coverage (pytest-coverage)
+      run: |
+        pipenv run pytest --cov=.
