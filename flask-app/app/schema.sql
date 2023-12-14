@@ -26,7 +26,7 @@ CREATE TABLE game (
   game_date TIMESTAMP NOT NULL,
   winner TEXT,
   score_A INTEGER,
-  score_B INTEGER,
+  score_B INTEGER
 );
 
 CREATE TABLE bet (
