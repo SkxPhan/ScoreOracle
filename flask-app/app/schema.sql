@@ -1,10 +1,13 @@
 DROP TABLE IF EXISTS user;
 DROP TABLE IF EXISTS post;
+DROP TABLE IF EXISTS game;
+DROP TABLE IF EXISTS bet;
 
 CREATE TABLE user (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   username TEXT UNIQUE NOT NULL,
-  password TEXT NOT NULL
+  password TEXT NOT NULL,
+  favorite_team TEXT
 );
 
 CREATE TABLE post (
@@ -14,4 +17,26 @@ CREATE TABLE post (
   title TEXT NOT NULL,
   body TEXT NOT NULL,
   FOREIGN KEY (author_id) REFERENCES user (id)
+);
+
+CREATE TABLE game (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  team_A TEXT NOT NULL,
+  team_B TEXT NOT NULL,
+  game_date TIMESTAMP NOT NULL,
+  winner TEXT,
+  score_A INTEGER,
+  score_B INTEGER,
+);
+
+CREATE TABLE bet (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  user_id INTEGER NOT NULL,
+  game_id INTEGER NOT NULL,
+  winner TEXT NOT NULL,
+  score_A TEXT NOT NULL,
+  score_B TEXT NOT NULL,
+  created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (user_id) REFERENCES user (id),
+  FOREIGN KEY (game_id) REFERENCES game (id)
 );
