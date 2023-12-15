@@ -1,8 +1,9 @@
 import os
 
+from flask import Flask
+
 from app import db
 from app.views import auth, blog
-from flask import Flask
 
 
 def create_app(test_config=None):
