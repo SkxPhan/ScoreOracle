@@ -32,7 +32,7 @@ jobs:
 
     - name: Run linter
       run: |
-        pipenv run flake8
+        pipenv run flake8 --max-line-length=81
 
     - name: Run type checker (mypy)
       run: |
@@ -40,7 +40,7 @@ jobs:
   
     - name: Run code formatter (black)
       run: |
-        pipenv run black .
+        pipenv run black --line-length=80 .
   
     - name: Run security linter (bandit)
       run: |
