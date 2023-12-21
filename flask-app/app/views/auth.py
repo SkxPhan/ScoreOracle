@@ -82,6 +82,13 @@ def logout():
     return redirect(url_for("index"))
 
 
+@bp.route("/settings", methods=("GET", "POST"))
+def settings():
+    if request.method == "POST":
+        pass
+    return render_template("auth/settings.html")
+
+
 @bp.before_app_request
 def load_logged_in_user():
     user_id = session.get("user_id")
