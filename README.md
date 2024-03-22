@@ -1,4 +1,4 @@
-# ScoreOracle - Football Tournament Prediction Platform
+# ScoreOracle - Football Tournament Prediction Platform (ongoing)
 
 ![Continuous Integration](https://github.com/SkxPhan/ScoreOracle/actions/workflows/ci.yml/badge.svg)
 ![Code Quality](https://github.com/SkxPhan/ScoreOracle/actions/workflows/code_quality.yml/badge.svg)
